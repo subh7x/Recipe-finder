@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
+
+:root{
+  --green:#176b3a; --green2:#249653; --cream:#fffaf0; --ink:#17231b;
+  --muted:#68736c; --card:#fff; --line:#e7ece7; --shadow:0 14px 40px rgba(25,65,42,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream)}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.navbar{height:72px;background:rgba(255,255,255,.96);display:flex;align-items:center;gap:28px;padding:0 5%;position:sticky;top:0;z-index:20;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:#222;font-family:Poppins;font-size:20px;white-space:nowrap}
+.brand img{width:43px;height:43px;border-radius:50%;object-fit:cover}
+.brand b{color:var(--green)}
+.navbar nav{margin-left:auto;display:flex;gap:25px}
+.navbar nav a{color:#26342b;text-decoration:none;font-weight:600;font-size:14px}
+.icon-btn{border:0;background:#eff7ef;border-radius:50%;width:40px;height:40px}
+.hero{min-height:570px;position:relative;background:radial-gradient(circle at 85% 30%,rgba(255,203,82,.30),transparent 23%),radial-gradient(circle at 75% 80%,rgba(92,183,94,.24),transparent 25%),linear-gradient(120deg,#0d3b22 0%,#176b3a 52%,#0e4b2c 100%);display:flex;align-items:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,51,29,.88),rgba(15,51,29,.38))}
+.hero-content{position:relative;z-index:1;width:min(1080px,90%);margin:auto;color:white;padding:55px 0}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:1.7px;color:#d7ffcf}
+.eyebrow.dark{color:var(--green)}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.05;margin:15px 0}
+h1 span{color:#c9f07d}
+.hero-content>p{max-width:650px;line-height:1.65;font-size:17px;color:#eef8ef}
+.finder-card{background:white;color:var(--ink);max-width:900px;margin-top:28px;padding:22px;border-radius:20px;box-shadow:0 20px 55px rgba(0,0,0,.24)}
+.finder-card>label{display:block;font-weight:700;margin-bottom:9px}
+.input-row{display:flex;gap:10px}
+.input-row input{min-width:0;flex:1;border:1px solid var(--line);border-radius:12px;padding:15px 16px;outline:none}
+.input-row input:focus{border-color:var(--green2);box-shadow:0 0 0 3px rgba(36,150,83,.12)}
+.primary-btn,.secondary-btn{border:0;border-radius:12px;padding:13px 19px;font-weight:800}
+.primary-btn{background:var(--green);color:white}
+.primary-btn:hover{background:#0f5a30}
+.controls{display:flex;gap:12px;margin-top:12px}
+.controls label{font-size:12px;color:var(--muted);font-weight:700;flex:1}
+.controls select{display:block;width:100%;margin-top:5px;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.hint{font-size:12px;color:#77827b;margin:12px 2px 0}
+.section{width:min(1100px,90%);margin:55px auto}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}
+.section-head h2{margin:7px 0 0;font-size:30px}
+.secondary-btn{background:#edf5ed;color:var(--green)}
+.recipes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.recipe-card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);transition:.2s}
+.recipe-card:hover{transform:translateY(-4px)}
+.recipe-image{height:180px;background:#dfe8df;display:flex;align-items:center;justify-content:center;font-size:75px}
+.recipe-body{padding:18px}
+.recipe-body h3{font-size:19px;margin:7px 0}
+.meta{font-size:12px;color:var(--muted);display:flex;gap:9px;flex-wrap:wrap}
+.tags{margin:12px 0}
+.tag{display:inline-block;background:#edf7ed;color:var(--green);padding:5px 8px;border-radius:20px;font-size:11px;font-weight:700;margin-right:4px}
+.view-btn{width:100%;border:0;background:var(--green);color:white;padding:11px;border-radius:10px;font-weight:800;margin-top:7px}
+.features{background:#eff7ee;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:36px 7%;border-top:1px solid #dcebdc;border-bottom:1px solid #dcebdc}
+.features div{padding:8px;text-align:center}
+.features span{font-size:30px}.features h3{font-size:15px;margin:10px 0 5px}.features p{font-size:12px;color:var(--muted);margin:0}
+.about{width:min(1100px,90%);margin:55px auto;display:grid;grid-template-columns:1.5fr 1fr;gap:35px;align-items:center}
+.about h2{font-size:32px;margin:9px 0}.about p{color:var(--muted);line-height:1.7}
+.about-box{background:white;padding:25px;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.about-box strong{color:var(--green)}
+footer{text-align:center;padding:28px;color:#718078;font-size:12px;border-top:1px solid var(--line)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;display:flex;align-items:center;justify-content:center;padding:18px}
+.modal-card{background:white;max-width:720px;width:100%;max-height:90vh;overflow:auto;border-radius:20px;padding:25px;position:relative}
+.close{position:absolute;right:15px;top:12px;border:0;background:#edf2ed;border-radius:50%;width:35px;height:35px}
+.modal-card h2{margin:0 45px 8px 0}.modal-card h4{color:var(--green);margin:20px 0 7px}
+.modal-card li{margin:8px 0;line-height:1.45}
+.dark-mode{--cream:#101612;--ink:#f0f5f1;--card:#18211b;--line:#2a382e;--muted:#aab5ae}
+.dark-mode .navbar,.dark-mode .finder-card,.dark-mode .modal-card{background:#18211b}
+.dark-mode .navbar nav a{color:#e9f1eb}
+.dark-mode .controls select,.dark-mode .input-row input{background:#111812;color:#eee}
+.dark-mode .features{background:#162119}
+@media(max-width:760px){
+  .navbar{padding:0 4%;height:64px}.navbar nav{display:none}.brand{font-size:17px}
+  .hero{min-height:620px}.hero-content{padding:40px 0}
+  .input-row{flex-direction:column}.controls{flex-direction:column}
+  .recipes-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr;padding:28px 5%}
+  .about{grid-template-columns:1fr}.section-head{align-items:center}.section-head h2{font-size:23px}
+}
+
+.brand img{object-fit:contain;background:#f2b52d;padding:2px}.hero:after{content:"🥔  🍅  🧅  🧄  🌿";position:absolute;right:4%;bottom:8%;font-size:clamp(24px,4vw,42px);opacity:.85}@media(max-width:760px){.hero:after{right:5%;bottom:3%;font-size:24px}}
